@@ -5,7 +5,7 @@ import "./Header.css";
 
 const Header = () => {
     return (
-        <div className="header">
+        <div className="header pt-5">
             <div className="container d-lg-flex flex-row justify-content-around align-items-center">
                 <div>
                     <div>
