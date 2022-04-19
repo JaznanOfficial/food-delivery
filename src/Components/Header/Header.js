@@ -6,7 +6,7 @@ import "./Header.css";
 const Header = () => {
     return (
         <div className="header">
-            <div className="container d-lg-flex flex-row justify-content-between align-items-center py-5">
+            <div className="container d-lg-flex flex-row justify-content-around align-items-center">
                 <div>
                     <div>
                         <h3>Are You Hungry?</h3>
@@ -16,8 +16,8 @@ const Header = () => {
                         </button>
                     </div>
                 </div>
-                <div>
-                    <img src={heroPizza} alt="img not found" width={"500px"} />
+                <div className="header-img d-flex justify-content-center align-items-center">
+                    <img src={heroPizza} alt="img not found" />
                 </div>
             </div>
         </div>

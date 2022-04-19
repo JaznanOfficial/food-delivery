@@ -9,7 +9,7 @@ import "./FoodsMenu.css";
 const FoodsMenu = () => {
     return (
         <div className="food-menu">
-            <Navbar variant="light">
+            <Navbar variant="light my-3">
                 <Container>
                     <Nav className="mx-auto">
                         <Link
