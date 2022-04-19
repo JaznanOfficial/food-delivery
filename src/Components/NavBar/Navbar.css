@@ -1,0 +1,18 @@
+
+a:hover{
+    color: #FF6F00 !important;
+}
+a:focus{
+    color: #FF6F00 !important;
+}
+
+.cart{
+    background-color: #FF6F00 !important;
+    border: 2px solid #FF6F00 !important;
+}
+
+.cart:hover{
+    background-color: white !important;
+    color: #FF6F00 !important;
+    border: 2px solid #FF6F00 !important;
+}

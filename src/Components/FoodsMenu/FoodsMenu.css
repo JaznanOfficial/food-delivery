@@ -1,0 +1,11 @@
+.food-menu a{
+    border-bottom: 3px solid white;
+}
+.food-menu a:hover{
+    color: #FF6F00 !important;
+    border-bottom: 3px solid #FF6F00;
+}
+.food-menu a:focus{
+    color: #FF6F00 !important;
+    border-bottom: 3px solid #FF6F00;
+}

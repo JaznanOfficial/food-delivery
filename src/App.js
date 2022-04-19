@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import HomePage from "./Components/HomePage/HomePage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NavBar from "./Components/NavBar/NavBar";
+import Breakfast from "./Components/Breakfast/Breakfast";
+import Lunch from "./Components/Lunch/Lunch";
+import Dinner from "./Components/Dinner/Dinner";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <BrowserRouter>
+                <NavBar></NavBar>
+                <Routes>
+                    <Route path="/*" element={<HomePage />}>
+                        <Route path="breakfast" element={<Breakfast />}></Route>
+                        <Route path="lunch" element={<Lunch />}></Route>
+                        <Route path="dinner" element={<Dinner />}></Route>
+                    </Route>
+                    <Route path="/home/*" element={<HomePage />}>
+                        <Route path="breakfast" element={<Breakfast />}></Route>
+                        <Route path="lunch" element={<Lunch />}></Route>
+                        <Route path="dinner" element={<Dinner />}></Route>
+                    </Route>
+                </Routes>
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;
